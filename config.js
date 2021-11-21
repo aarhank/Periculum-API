@@ -1,1 +1,1 @@
-module.exports.connectionURL = `mongodb+srv://Aarhan:aarhan%40123@torrentdb.cpcc8.mongodb.net/Production?retryWrites=true&w=majority`
+module.exports.connectionURL = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASSWORD}@torrentdb.cpcc8.mongodb.net/Production?retryWrites=true&w=majority`

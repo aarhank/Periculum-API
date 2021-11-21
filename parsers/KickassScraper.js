@@ -1,5 +1,6 @@
 const axios = require("axios");
 const cheerio = require("cheerio");
+require('dotenv').config();
 const puppeteer = require("puppeteer");
 var request = require('request');
 const mongoose = require("mongoose");
@@ -14,6 +15,7 @@ mongoose.connect(connectionURL, {
 
 const baseURL = "https://kickasstorrents.unblockninja.com/";
 const categories = [
+    "xxx",    
     "tv",
     "movies",
     "apps",
@@ -53,7 +55,6 @@ async function getMagnet(lnk){
     const links = await $('#mainDetailsTable > tbody > tr > td:nth-child(1) > div.buttonsline.downloadButtonGroup.clearleft.novertpad > a.kaGiantButton.siteButton.iconButton');
     const link = await links.attr("href");
     await browser.close();
-    console.log(link);
     return link;
     
 }
@@ -93,7 +94,6 @@ async function parse(){
                                 console.log(`Added ${currTorrent.Name}`);
                             }
                         });   
-                        console.log(currTorrent);
                     }
                 }
                 catch(error){
@@ -101,10 +101,11 @@ async function parse(){
                 }
                 });
         }
-        console.log("done");
+        
         
     }
     await browser.close();
+    console.log("done");
 }
 
 parse();
