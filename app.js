@@ -4,10 +4,8 @@ const cookieParser = require("cookie-parser")
 const helmet = require("helmet")
 const mongoose = require("mongoose")
 const cors = require("cors")
-const escapeRegex = (text) => {
-    return text.replace(/[-[\]{}()*+?.,\\^$|#\s]/g, "\\$&");
-};
-const {torrent} = require("./torrents");
+
+
 const {connectionURL} = require('./config')
 
 const app = express();
@@ -28,22 +26,9 @@ mongoose.connect(connectionURL ,{useNewUrlParser:true, useUnifiedTopology: true}
     }
 })
 
+const searchRouter = require('./routes/Search')
+app.use('/search', searchRouter)
 
-
-app.get("/search", (req,res)=>{
-    if(req.query.search){
-        const regex = new RegExp(escapeRegex(req.query.search.toString()), "gi");
-        //console.log(req.query.search)
-        torrent.find({"Name":regex},(err,foundTorrents)=>{
-            if(err){
-                console.log(err);
-            }
-            else{
-                res.json(foundTorrents);
-            }
-        })
-    }
-})
 
 app.get("/", (req,res) => {
     res.send("working")

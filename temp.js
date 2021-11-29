@@ -5,7 +5,7 @@ const cheerio = require("cheerio");
 const puppeteer = require("puppeteer");
 var request = require('request');
 
-var URL = 'https://kickasstorrents.to/red-notice-2021-720p-nf-webrip-800mb-x264-galaxyrg-t5049113.html';
+var URL = '';
 
 async function parse(){
     

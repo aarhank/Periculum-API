@@ -14,10 +14,10 @@ mongoose.connect(connectionURL, {
 });
 
 const baseURL = "https://kickasstorrents.unblockninja.com/";
-const categories = [
-    "xxx",    
+const categories = [    
     "tv",
     "movies",
+    "xxx",
     "apps",
     "music",
     "other",
