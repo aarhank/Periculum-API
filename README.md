@@ -1,10 +1,10 @@
 
 
-## Preiculum API- A torrect scrapper
+## Preiculum API- Torrent scrapper
 
-<img alt="Javascript" src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E"/> <img alt="Nodejs" src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white"/><img alt="Pupeteer" src="https://img.shields.io/badge/Puppeteer-40B5A4?style=for-the-badge&logo=Puppeteer&logoColor=white"/>
+<img alt="Javascript" src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E"/> <img alt="Nodejs" src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white"/> <img alt="Puppeteer" src="https://img.shields.io/badge/Puppeteer-40B5A4?style=for-the-badge&logo=Puppeteer&logoColor=white"/>
 
-A __working api__ for accessing Torrents data from kickasstorrent. Made using cheerio,pupeteer and nodejs        
+A __working api__ for accessing kickasstorrent Torrents data .    
 
 
 BASE URL: https://periculum.herokuapp.com/  
@@ -15,11 +15,10 @@ BASE URL: https://periculum.herokuapp.com/
 It has only one endpoint that is for search, you can pass in an query for the data you want to access like
 
 **Request:** 
-```/search?search=tv```    
-  Get all tv series torrents.  
+```/search?search=tv```
 
 **Response:**
-  listing a few here because there are a lot
+listing a few here because there are a lot
 
 ```
 [
@@ -92,7 +91,7 @@ It has only one endpoint that is for search, you can pass in an query for the da
 ]    
 ```
 
-Here are some other examples - 
+### Here are some other examples: 
 
 ```
     /search?search=movies
@@ -102,7 +101,7 @@ Here are some other examples -
     /search?search=other
 ```
 
-You can also directly search for what you are looking for like -
+### You can also directly search for what you are looking for like:
 
 **Request:**
 ```
@@ -136,5 +135,4 @@ You can also directly search for what you are looking for like -
     }
 ]
 ```
-
 
