@@ -2,6 +2,7 @@ const express = require("express")
 require('dotenv').config();
 const cookieParser = require("cookie-parser")
 const helmet = require("helmet")
+const puppeteer = require("puppeteer");
 const mongoose = require("mongoose")
 const cors = require("cors")
 
