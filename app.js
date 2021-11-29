@@ -31,7 +31,7 @@ app.use('/search', searchRouter)
 
 
 app.get("/", (req,res) => {
-    res.send("working")
+    res.send("somehow worked")
 });
 
 
