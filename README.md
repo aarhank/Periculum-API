@@ -141,7 +141,8 @@ listing a few here because there are a lot
 For scraping data we can simply run the KickassScraper.js file in the parsers folder:
 ``` node KickassScraper.js ```
 
-**NOTE: Its a powerfull js file my laptop crashed 3 times running this, its because its opening two instances for scraping data, one for the basic things like id,link,source.. and other for the magnet.**
+### NOTE: 
+**Its a powerfull js file my laptop crashed 3 times running this, its because its opening two instances for scraping data, one for the basic things like id,link,source.. and other for the magnet.**
 
 Too avoid this it's recommended to not run this file for all the pages there are a maximum of 200 pages, currently its set to run for pages 1 to 3 or if you want to run it for all the pages you can select one category at a time there are a maximum of 8 categories:
 
