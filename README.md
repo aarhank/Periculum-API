@@ -1,6 +1,6 @@
 
 
-## Preiculum API- Torrent scrapper
+## Preiculum API- Torrent scraper
 
 <img alt="Javascript" src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E"/> <img alt="Nodejs" src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white"/> <img alt="Puppeteer" src="https://img.shields.io/badge/Puppeteer-40B5A4?style=for-the-badge&logo=Puppeteer&logoColor=white"/>
 
@@ -134,5 +134,28 @@ listing a few here because there are a lot
         "UploadDate": 1637167812716
     }
 ]
+```
+
+## Scraping Data 
+
+For scraping data we can simply run the KickassScraper.js file in the parsers folder:
+``` node KickassScraper.js ```
+
+**NOTE: Its a powerfull js file my laptop crashed 3 times running this, its because its opening two instances for scraping data, one for the basic things like id,link,source.. and other for the magnet.**
+
+Too avoid this it's recommended to not run this file for all the pages there are a maximum of 200 pages, currently its set to run for pages 1 to 3 or if you want to run it for all the pages you can select one category at a time there are a maximum of 8 categories:
+
+```
+const categories = [    
+    "tv",
+    "movies",
+    "xxx",
+    "apps",
+    "music",
+    "other",
+    "anime",
+    "games",
+];
+
 ```
 
