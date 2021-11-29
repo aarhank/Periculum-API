@@ -4,7 +4,7 @@ const router = express.Router()
 const escapeRegex = (text) => {
     return text.replace(/[-[\]{}()*+?.,\\^$|#\s]/g, "\\$&");
 };
-const {torrent} = require("../torrents");
+const {torrent} = require("../models/torrents");
 
 
 

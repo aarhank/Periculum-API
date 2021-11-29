@@ -5,7 +5,7 @@ const puppeteer = require("puppeteer");
 var request = require('request');
 const mongoose = require("mongoose");
 const { connectionURL } = require("../config");
-const { torrent } = require("../torrents");
+const { torrent } = require("../models/torrents");
 const cookieParser = require("cookie-parser");
 
 mongoose.connect(connectionURL, {
